@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased g-[#fafafa]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#fafafa]`}
       >
          <NuqsAdapter>{children}</NuqsAdapter>
       </body>

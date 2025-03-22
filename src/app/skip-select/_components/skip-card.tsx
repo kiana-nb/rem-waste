@@ -36,8 +36,8 @@ export default function SkipCard({ size, id, allowed_on_road, allows_heavy_waste
           <button
             onClick={() => setSelectedSkip(String(id))}
             className={`${
-              selectedSkip !== String(id) ? "visible" : "invisible"
-            } bg-green-600 hover:bg-green-700 px-4 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition`}
+              selectedSkip !== String(id) ? "opacity-1" : "opacity-0"
+            } bg-green-600 hover:bg-green-700 px-4 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition-all`}
           >
             <ShoppingCart size={18} /> Select Skip
           </button>
