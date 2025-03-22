@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import FiltersModal from "./_components/filters-modal";
 import Footer from "./_components/footer";
 
@@ -13,13 +14,16 @@ export default function SkipLayout({
           <h1 className="text-2xl font-bold">Choose Your Skip Size</h1>
           <h2 className="text-base text-gray-600">Select the skip size that best suits your needs</h2>
         </header>
-
-        <FiltersModal />
+        <Suspense>
+          <FiltersModal />
+        </Suspense>
       </div>
 
       {children}
 
-      <Footer />
+      <Suspense>
+        <Footer />
+      </Suspense>
     </main>
   );
 }
