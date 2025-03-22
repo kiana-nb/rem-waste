@@ -92,7 +92,7 @@ function ApplyButton({ onClick }: { onClick: () => void }) {
     await revalidateSkips();
   };
   return (
-    <button onClick={handleClick} className="w-full mt-20 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg">
+    <button onClick={handleClick} className="w-full mt-20 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-lg">
       Apply Filters
     </button>
   );

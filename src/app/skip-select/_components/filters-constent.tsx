@@ -67,7 +67,7 @@ function FilterOption({ label, children }: PropsWithChildren<{ label: string }>)
 
 function SelectButton({ isSelected, onClick, children }: PropsWithChildren<SelectButtonProps>) {
   return (
-    <button className={`p-2 rounded-lg w-full whitespace-nowrap ${isSelected ? "bg-blue-600 text-white" : "border"}`} onClick={onClick}>
+    <button className={`p-2 rounded-lg w-full whitespace-nowrap ${isSelected ? "bg-green-600 text-white" : "border"}`} onClick={onClick}>
       {children}
     </button>
   );
