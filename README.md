@@ -2,25 +2,25 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Project Approach and Implementation
 
-# Understanding the Industry
+### Understanding the Industry
 Since I was unfamiliar with the skip hire industry, my first step was to research how the system works, what skip hire entails, and how users typically interact with such services. This provided me with the necessary context to make informed design and functionality decisions.
 
-# Enhancing User Experience
+### Enhancing User Experience
 While analyzing the existing setup, I identified a significant improvement opportunity: the absence of a filtering system. Implementing a filtering feature would greatly enhance user experience by enabling users to quickly find the most relevant skip options based on their specific needs.
 
-# Technology Stack
+### Technology Stack
 I opted to build the project using Next.js for server-side rendering and performance benefits, TypeScript for type safety, and Tailwind CSS for efficient styling and responsiveness.
 
-# Data Fetching & Rendering
+### Data Fetching & Rendering
 To begin, I focused on fetching the provided data and displaying it in a structured manner. Each skip option was rendered as an individual card component, ensuring modularity and reusability. Since data fetching plays a crucial role in performance and user experience, I implemented server-side fetching to optimize loading times and improve responsiveness.
 
-# Layout & Navigation Enhancements
+### Layout & Navigation Enhancements
 To create a better user flow, I separated the layout from the main page logic. I also introduced a footer that includes navigation buttons for moving between pages, as well as a section to display the user's selected skip option.
 
-# Implementing Selection Functionality
+### Implementing Selection Functionality
 To allow users to select a skip, I converted the card component into a client component, enabling interactivity. I used Next.js search parameters to store the selected skip’s ID in the URL, ensuring that the selection persists across the application.
 
-# Filtering System Implementation
+### Filtering System Implementation
 Next, I implemented a filtering system to refine the displayed skip options based on key attributes:
 
 - Size
@@ -31,7 +31,7 @@ Next, I implemented a filtering system to refine the displayed skip options base
 
 To maintain a clean state and ensure filters were easily shareable, I passed filter values as URL search parameters and used them to filter the fetched data dynamically.
 
-# Loading States & Skeleton UI
+### Loading States & Skeleton UI
 Since data updates (such as applying filters) caused a slight delay, I introduced loading indicators to improve UX. I implemented:
 
 - React Skeleton UI for a smoother transition while fetching data
@@ -40,7 +40,7 @@ Since data updates (such as applying filters) caused a slight delay, I introduce
 
 - React Suspense Boundary for better control over loading experiences
 
-# UI/UX Improvements
+### UI/UX Improvements
 With the core functionality in place, I explored Dribbble to gather inspiration for modern hiring page designs. Based on my research, I refined the card design to enhance its visual appeal and readability.
 
 
