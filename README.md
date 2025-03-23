@@ -9,19 +9,19 @@ Since I was unfamiliar with the skip hire industry, my first step was to researc
 While analyzing the existing setup, I identified a significant improvement opportunity: the absence of a filtering system. Implementing a filtering feature would greatly enhance user experience by enabling users to quickly find the most relevant skip options based on their specific needs.
 
 ### Technology Stack
-I opted to build the project using Next.js for server-side rendering and performance benefits, TypeScript for type safety, and Tailwind CSS for efficient styling and responsiveness.
+I opted to build the project using **Next.js** for server-side rendering and performance benefits, **TypeScript** for type safety, and **Tailwind** CSS for efficient styling and responsiveness.
 
 ### Data Fetching & Rendering
-To begin, I focused on fetching the provided data and displaying it in a structured manner. Each skip option was rendered as an individual card component, ensuring modularity and reusability. Since data fetching plays a crucial role in performance and user experience, I implemented server-side fetching to optimize loading times and improve responsiveness.
+To begin, I focused on fetching the provided data and displaying it in a structured manner. Each skip option was rendered as an individual **card component**, ensuring modularity and reusability. Since data fetching plays a crucial role in performance and user experience, I implemented **server-side fetching** to optimize loading times and improve responsiveness.
 
 ### Layout & Navigation Enhancements
-To create a better user flow, I separated the layout from the main page logic. I also introduced a footer that includes navigation buttons for moving between pages, as well as a section to display the user's selected skip option.
+To create a better user flow, I separated the **layout** from the main page logic. I also introduced a **footer** that includes navigation buttons for moving between pages, as well as a section to display the user's selected skip option.
 
 ### Implementing Selection Functionality
-To allow users to select a skip, I converted the card component into a client component, enabling interactivity. I used Next.js search parameters to store the selected skip’s ID in the URL, ensuring that the selection persists across the application.
+To allow users to select a skip, I converted the **card component into a client component**, enabling interactivity. I used **Next.js search params** to store the selected skip’s ID in the URL, ensuring that the selection persists across the application.
 
 ### Filtering System Implementation
-Next, I implemented a filtering system to refine the displayed skip options based on key attributes:
+Next, I implemented a **filtering system** to refine the displayed skip options based on key attributes:
 
 - Size
 
@@ -29,19 +29,25 @@ Next, I implemented a filtering system to refine the displayed skip options base
 
 - Whether it is allowed to be placed on the road
 
-To maintain a clean state and ensure filters were easily shareable, I passed filter values as URL search parameters and used them to filter the fetched data dynamically.
+To maintain a clean state and ensure filters were easily shareable, I passed filter values as **URL search params** and used them to filter the fetched data dynamically.
 
 ### Loading States & Skeleton UI
-Since data updates (such as applying filters) caused a slight delay, I introduced loading indicators to improve UX. I implemented:
+Since data updates (such as applying filters) caused a slight delay, I introduced **loading indicators** to improve UX. I implemented:
 
-- React Skeleton UI for a smoother transition while fetching data
+- **React Skeleton UI** for a smoother transition while fetching data
 
-- Next.js loading states to handle server-side transitions
+- **Next.js loading states** to handle server-side transitions
 
-- React Suspense Boundary for better control over loading experiences
+- **React Suspense Boundary** for better control over loading experiences
 
 ### UI/UX Improvements
-With the core functionality in place, I explored Dribbble to gather inspiration for modern hiring page designs. Based on my research, I refined the card design to enhance its visual appeal and readability.
+With the core functionality in place, I explored **Dribbble** to gather inspiration for modern hiring page designs. Based on my research, I refined the **card design** to enhance its visual appeal and readability.
+
+
+
+
+
+
 
 
 ## Getting Started
